@@ -1,12 +1,15 @@
-//Erstellen Sie eine Variable, welche einen primitiven Datentyp abbildet und nicht neu zugewiesen werden kann.
+// Primitiver Datentyp, der nicht neu zugewiesen werden kann
 const number = 42;
 
-
-//Erstellen Sie eine konstante Variable, welche ein Objekt als Wert enthält und mindestens 3 Eigenschaften aufweist.
+// Konstante Variable, die ein Objekt mit mindestens 3 Eigenschaften enthält
 const person = {
-    name: "Miralem Banovi",
-    age: 27,
-    occupation: "Software Developer"
-  };
-  
-// 
+  name: "Miralem Banovi",
+  age: 27,
+  occupation: "Software Developer"
+};
+
+// Füge eine neue Eigenschaft hinzu
+const personWithCity = {
+  ...person,
+  city: "Bern"
+};

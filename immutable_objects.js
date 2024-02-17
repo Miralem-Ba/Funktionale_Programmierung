@@ -20,4 +20,5 @@ const personWithUpdatedAge = {
     age: 30
   };
 
-//
+// Entferne eine Eigenschaft, zum Beispiel 'occupation'
+const { occupation, ...personWithoutOccupation } = person;

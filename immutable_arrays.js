@@ -10,6 +10,14 @@ const newArrayWithExtraElement = [
     { id: 3, name: 'Objekt3', attribute: 'Wert3' }
   ];
 
+function changeName(person) {
+    if (person.id === 2) {
+      return { ...person, name: "Element" }; 
+    }
+    return person; 
+  }
+  
+const newArrayWithUpdatedName = objects.map(changeName);
 
 
 //Neues Array ohne das Element mit dem kleinsten ID

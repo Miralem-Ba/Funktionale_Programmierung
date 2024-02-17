@@ -13,3 +13,11 @@ const personWithCity = {
   ...person,
   city: "Bern"
 };
+
+// Ändere eine bestehende Eigenschaft (Alter)
+const personWithUpdatedAge = {
+    ...person,
+    age: 30
+  };
+
+//
